@@ -33,3 +33,68 @@
 .bg-text {
   font-size: smaller;
 }
+.lt-spacing{
+  
+  letter-spacing: 5px;
+}
+
+.signin1{
+  width: 22%;
+ 
+  height: 300px;
+  margin: 100px auto;
+}
+
+.fontsize{
+
+  font-size: 13px;
+}
+
+.inputhei{
+  height: 40px;
+}
+
+.textblack{
+  color: black;
+}
+
+.bg-color{
+  background-color: black;
+  color: white;
+  border-radius: 0px;
+}
+
+.btn:hover{
+  background-color: rgb(71, 67, 67);
+  color: white;
+}
+
+#show{
+  position: absolute;
+  left: px;
+  transform: translate(0,-50%);
+  
+  cursor: pointer;
+}
+
+.anoh1{
+  height: 600px;
+  
+}
+.required:after {
+  content:"*";
+  color: red;
+}
+.showpwd{
+  position: absolute;
+  margin: 10px 0 0 -45px;
+  color: black;
+  font-weight: lighter;
+  font-size: 13px;
+  
+}
+
+#hidepwd{
+  display: none;
+}
+
