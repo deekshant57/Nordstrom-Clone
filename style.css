@@ -1,0 +1,35 @@
+#mynavbar {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  /* font-family: 'Roboto', sans-serif; */
+}
+#mynavbarp2 {
+  font-weight: 400;
+}
+.signinbtn {
+  border: 1px solid black;
+}
+.signup > button:hover {
+  border: 0;
+  background-color: red;
+}
+#orangediv {
+  color: white;
+  background-color: #fe3b20;
+  /* width: 100%; */
+  height: 300px;
+}
+.bgimaget {
+  outline: 1px solid red;
+}
+.bgimage1 {
+  background-image: url("https://n.nordstrommedia.com/id/44648fdb-be56-4600-addb-6d3c7ba21f2c.jpeg?h=200&w=1608");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: relative; */
+}
+.bg-text {
+  font-size: smaller;
+}
