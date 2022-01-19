@@ -85,6 +85,10 @@
   content:"*";
   color: red;
 }
+.required1::before{
+  content:"*";
+  color: red;
+}
 .showpwd{
   position: absolute;
   margin: 10px 0 0 -45px;
@@ -96,5 +100,10 @@
 
 #hidepwd{
   display: none;
+}
+
+.edit1{
+  color: black;
+   margin-left: 35%;
 }
 
