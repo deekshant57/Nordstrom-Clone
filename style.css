@@ -47,7 +47,7 @@
 
 .fontsize{
 
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .inputhei{
@@ -104,6 +104,106 @@
 
 .edit1{
   color: black;
-   margin-left: 35%;
+  margin-left: 38%;
+}
+
+#getdata{
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.form-check{
+ 
+  margin-top: 6px;
+ 
+}
+#flexCheckDefault{
+
+  border-radius: 0px;
+}
+
+#flexCheckDefault:checked{
+
+  background-color: black;
+ 
+}
+
+#heigth{
+  height: 50px;
+}
+
+.accordion-icon:after{  
+  
+  content: '\2212';
+  width: 0px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  right: 20px;
+  top: 11px;
+  position: absolute;
+} 
+
+.accordion-icon.collapsed:after{
+  content: '\002B';
+}
+
+#mynavbar {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+#mynavbarp2 {
+  font-weight: 400;
+}
+.myfont {
+  font-size: smaller;
+}
+
+#blockelem {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px 50px;
+}
+#avatar {
+  width: 100%;
+}
+#blockelem > div:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#blockelem h6,
+p {
+  padding: 10px;
+}
+#blockelem > p {
+  padding-top: 0px;
+}
+b {
+  padding-left: 10px;
+}
+#blockelem > div > div {
+  display: flex;
+  margin-right: 10px;
+  justify-content: space-between;
+}
+
+#accordion-icon > h2 {
+  width: 100%;
+}
+.bag {
+  width: 80px;
+  background-color: black;
+  color: white;
+  border: 0px;
+}
+#wishlist {
+  border: 0px;
+  font-size: 25px;
+  background-color: white;
+}
+#blockelem > div > div :nth-child(3):hover
+{
+
+  
+  color: red;
 }
 
