@@ -728,7 +728,7 @@
   }
 
   //Get the button
-  var backtoTop = document.getElementById("back-to-top");
+  var backtoTopbtn = document.getElementById("back-to-top");
 
   // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = function () {
@@ -740,9 +740,9 @@
       document.body.scrollTop > 1000 ||
       document.documentElement.scrollTop > 1000
     ) {
-      backtoTop.style.display = "block";
+      backtoTopbtn.style.display = "block";
     } else {
-      backtoTop.style.display = "none";
+      backtoTopbtn.style.display = "none";
     }
   }
 
