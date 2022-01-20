@@ -1,0 +1,92 @@
+<div class="d-flex justify-content-around">
+  <div class="card border-0" style="width: 15rem">
+    <img
+      src="https://n.nordstrommedia.com/id/sr3/64c649ce-32bc-4843-b097-2cd553e57761.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <p class="card-title fw-light">W.R.K</p>
+      <div class="d-flex lh-1 justify-content-between">
+        <small>
+          <div class="text-danger fw-bold">INR 4,716.34</div>
+        </small>
+        <small>
+          <p class="text-muted">
+            <span class="text-decoration-line-through">INR7,860.57</span>
+            40% Off
+          </p>
+        </small>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="d-flex justify-content-around">
+  <div class="card border-0" style="width: 15rem">
+    <img
+      src="https://n.nordstrommedia.com/id/sr3/934238f7-19fd-415b-8f86-15cef4726907.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <p class="card-title fw-light">Nordstrom</p>
+      <div class="d-flex lh-1 justify-content-between">
+        <small>
+          <div class="text-danger fw-bold">INR 3,125.78</div>
+        </small>
+        <small>
+          <p class="text-muted">
+            <span class="text-decoration-line-through">INR8012.17</span>
+            60% Off
+          </p>
+        </small>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="d-flex justify-content-around">
+  <div class="card border-0" style="width: 15rem">
+    <img
+      src="https://n.nordstrommedia.com/id/sr3/c72d5188-2bed-4cc8-a817-6365833204bb.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <p class="card-title fw-light">Nordstrom</p>
+      <div class="d-flex lh-1 justify-content-between">
+        <small>
+          <div class="text-danger fw-bold">INR 2,787.29</div>
+        </small>
+        <small>
+          <p class="text-muted">
+            <span class="text-decoration-line-through">INR5574.59</span>
+            50% Off
+          </p>
+        </small>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="d-flex justify-content-around">
+  <div class="card border-0" style="width: 15rem">
+    <img
+      src="https://n.nordstrommedia.com/id/sr3/ada0959f-f5ab-4784-8bed-ef50442a3f41.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <p class="card-title fw-light">David Donohue</p>
+      <div class="d-flex lh-1 justify-content-between">
+        <small>
+          <div class="text-danger fw-bold">INR 5,815.22</div>
+        </small>
+        <small>
+          <p class="text-muted">
+            <span class="text-decoration-line-through">INR11,630.44</span>
+            50% Off
+          </p>
+        </small>
+      </div>
+    </div>
+  </div>
+</div>

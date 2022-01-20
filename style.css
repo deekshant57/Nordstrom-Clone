@@ -5,6 +5,12 @@
 }
 #mynavbarp2 {
   font-weight: 400;
+  font-size: smaller;
+}
+.changeinfont {
+  font-family: "Roboto", sans-serif;
+  /* font-weight: 600; */
+  letter-spacing: 8px;
 }
 .signinbtn {
   border: 1px solid black;
@@ -32,4 +38,52 @@
 }
 .bg-text {
   font-size: smaller;
+}
+.bgimage2 {
+  background-image: url("https://n.nordstrommedia.com/id/b1069614-2540-4b45-b35a-8d93da522e97.jpeg?h=600&w=1608");
+  height: 28rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.india {
+  position: relative;
+  left: 12%;
+  top: 55%;
+  letter-spacing: 0.5px;
+}
+.cursorForImg {
+  cursor: pointer;
+}
+.lettersphead {
+  letter-spacing: 5px;
+}
+.image-container {
+  position: relative;
+}
+.image-container .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #fff;
+}
+.image-container:hover .after {
+  display: block;
+  background: rgba(7, 7, 7, 0.753);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* transition: 2s ease-in-out 0.5s; */
+  /* transition-property: ease-in-out; */
+}
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
 }
