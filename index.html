@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="icon"
+      href="//n.nordstrommedia.com/id/c4fb2a09-3657-4161-9b79-6412897d9399.png"
+      sizes="96x96"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Roboto:wght@100;300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -26,56 +31,495 @@
     </title>
   </head>
   <body>
+    <!-- Top Bar -->
+
+    <div class="bg-dark topbar">
+      <p class="text-center py-2 text-white small fw-bold mb-1">
+        The best Valentine's Day gifts for every love on your list.
+        <span class="fw-normal">There's still time to shop!</span>
+        <span class="fw-normal text-decoration-underline"
+          >Valentine's Day Gifts</span
+        >
+        <span class="float-end me-4 fw-light"
+          ><img
+            src="https://n.nordstrommedia.com/alias/IN.gif"
+            alt=""
+            class="rounded-circle"
+            width="14px"
+            height="14px"
+          />
+          India</span
+        >
+      </p>
+    </div>
+
+    <!-- Navbar part -1 -->
+
     <div id="mynavbar">
-      <!-- Navbar part -1 -->
-      <div>
-        <nav class="navbar navbar-expand-lg navbar-light pt-4">
-          <div class="container-fluid px-4">
-            <a class="navbar-brand" href="index.html">
-              <img
-                src="https://n.nordstrommedia.com/alias/nordstrom-logo.svg"
-                alt=""
-                class="img-fluid"
-                height="17px"
-                width="200px"
-              />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse justify-content-end"
-              id="navbarSupportedContent"
-            >
-              <div class="text-decoration-none">
-                <div class="d-inline"><i class="bi bi-search"></i> Search</div>
-                <div
-                  class="d-inline ms-2"
-                  onclick="window.location.href='signin.html'"
-                >
-                  Sign In <i class="bi bi-chevron-down"></i>
+      <nav class="navbar navbar-expand d-block navbar-light pt-3">
+        <div class="container-fluid px-4">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="https://n.nordstrommedia.com/alias/nordstrom-logo.svg"
+              alt=""
+              class="img-fluid"
+              height="17px"
+              width="200px"
+            />
+          </a>
+          <div
+            class="d-sm-none d-xs-none d-md-block justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <div class="text-decoration-none">
+              <div class="d-inline"><i class="bi bi-search"></i> Search</div>
+              <div
+                class="d-inline ms-2"
+                onclick="window.location.href='signin.html'"
+              >
+                Sign In <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="d-inline ms-2"><i class="bi bi-bag"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navbar part -2 -->
+        <div id="mynavbarp2" class="d-flex justify-content-around mt-3">
+          <div class="dropdownNS">
+            <button class="btn small p-0"><small>Sale</small></button>
+            <div class="megaContent">
+              <div class="megaRow d-flex justify-content-around pt-5 lh-lg">
+                <div class="megaColumn">
+                  <div class="p-4">
+                    <ul class="list-unstyled d-flex flex-column">
+                      <li class="mb-2">
+                        <a
+                          href="#"
+                          class="fw-bolder text-dark text-decoration-none fs-6"
+                          >Sale : Get Inspired</a
+                        >
+                      </li>
+                      <hr />
+                      <li class="mb-3">
+                        <a
+                          href="#"
+                          class="fw-bolder text-dark text-decoration-none fs-6"
+                          >Bestsellers</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a
+                          href="#"
+                          class="fw-bolder text-dark text-decoration-none fs-6"
+                          >New Markdowns</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a
+                          href="#"
+                          class="fw-bolder text-dark text-decoration-none fs-6"
+                          >Price Matched</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a
+                          href="#"
+                          class="fw-bolder text-dark text-decoration-none fs-6"
+                          >Nordstrom Made Sale</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a
+                          href="#"
+                          class="fw-bolder text-dark text-decoration-none fs-6"
+                          >Men's Designer Sale</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a
+                          href="#"
+                          class="fw-bolder text-dark text-decoration-none fs-6"
+                          >Women's Designer Sale</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="d-inline ms-2"><i class="bi bi-bag"></i></div>
-                <!-- <a class="text-decoration-none" href="#">Search</a>
-                <a class="text-decoration-none" href="signin.html">Sign In</a>
-                <a class="text-decoration-none" href="">Cart</a> -->
+                <div class="megaColumn">
+                  <div class="p-4">
+                    <ul class="list-unstyled d-flex flex-column">
+                      <li class="mb-2">
+                        <a
+                          href="#"
+                          class="fw-bolder text-dark text-decoration-none fs-6"
+                          >Women</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >New Markdowns</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Clothing</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Shoes</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Handbags & Wallets</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Jewelry</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Accessories</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Beauty</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Designer</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Plus</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Petite</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Maternity</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Juniors</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="megaColumn">
+                  <div class="p-4">
+                    <ul class="list-unstyled d-flex flex-column">
+                      <li class="mb-2">
+                        <a
+                          href="#"
+                          class="fw-bolder text-dark text-decoration-none fs-6"
+                          >Men</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >New Markdowns</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Clothing</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Shoes</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Accessories</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Grooming & Cologne</a
+                        >
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Designer</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="#"
+                          class="text-dark text-decoration-none fw-bolder fs-6"
+                          >Designer</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Women</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Men</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a
+                          href="#"
+                          class="text-dark text-decoration-none fw-bolder fs-6"
+                          >Contemporary</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="megaColumn">
+                  <div class="p-4">
+                    <ul class="list-unstyled d-flex flex-column">
+                      <li class="mb-2">
+                        <a
+                          href="#"
+                          class="fw-bolder text-dark text-decoration-none fs-6"
+                          >Kids</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >New Markdowns</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Girls</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Boys</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Baby</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Baby Gear & Essentials</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Shoes</a
+                        >
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Beauty</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="#"
+                          class="text-dark text-decoration-none fw-bolder fs-6"
+                          >Young Adult</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Women</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Men</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Gender Inclusive</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="megaColumn">
+                  <div class="p-4">
+                    <ul class="list-unstyled d-flex flex-column">
+                      <li class="mb-2">
+                        <a
+                          href="#"
+                          class="fw-bolder text-dark text-decoration-none fs-6"
+                          >Home</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >New Markdowns</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Bedding & Bath</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Home Decor</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Electronics & Tech Accessories</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Luggage & Travel</a
+                        >
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="text-dark text-decoration-none"
+                          >Tabletop & Travel</a
+                        >
+                      </li>
+                      <li class="mb-4">
+                        <a
+                          href="#"
+                          class="text-dark text-decoration-none fw-bolder fs-6"
+                          >Beauty</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="#"
+                          class="text-dark text-decoration-none fw-bolder fs-6"
+                          >All Sale</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="megaColumn">6</div>
               </div>
             </div>
           </div>
-        </nav>
-      </div>
-      <!-- Navbar part -2 -->
-      <div id="mynavbarp2" class="d-flex justify-content-between mt-2 px-4">
-        <div>Sale</div>
-        <div>Women</div>
+          <div class="dropdownNS">
+            <button class="btn small p-0"><small>Women</small></button>
+            <div class="megaContent">
+              <div class="megaRow">
+                <div class="megaColumn"></div>
+                <div class="megaColumn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdownNS">
+            <button class="btn small p-0"><small>Men</small></button>
+            <div class="megaContent">
+              <div class="megaRow">
+                <div class="megaColumn"></div>
+                <div class="megaColumn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdownNS">
+            <button class="btn small p-0"><small>Kids</small></button>
+            <div class="megaContent">
+              <div class="megaRow">
+                <div class="megaColumn"></div>
+                <div class="megaColumn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdownNS">
+            <button class="btn small p-0"><small>Young Adult</small></button>
+            <div class="megaContent">
+              <div class="megaRow">
+                <div class="megaColumn"></div>
+                <div class="megaColumn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdownNS">
+            <button class="btn small p-0"><small>Activewear</small></button>
+            <div class="megaContent">
+              <div class="megaRow">
+                <div class="megaColumn"></div>
+                <div class="megaColumn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdownNS">
+            <button class="btn small p-0"><small>Home</small></button>
+            <div class="megaContent">
+              <div class="megaRow">
+                <div class="megaColumn"></div>
+                <div class="megaColumn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdownNS">
+            <button class="btn small p-0"><small>Beauty</small></button>
+            <div class="megaContent">
+              <div class="megaRow">
+                <div class="megaColumn"></div>
+                <div class="megaColumn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdownNS">
+            <button class="btn small p-0"><small>Designer</small></button>
+            <div class="megaContent">
+              <div class="megaRow">
+                <div class="megaColumn"></div>
+                <div class="megaColumn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdownNS">
+            <button class="btn small p-0"><small>Gifts</small></button>
+            <div class="megaContent">
+              <div class="megaRow">
+                <div class="megaColumn"></div>
+                <div class="megaColumn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdownNS">
+            <button class="btn small p-0"><small>Brands</small></button>
+            <div class="megaContent">
+              <div class="megaRow">
+                <div class="megaColumn"></div>
+                <div class="megaColumn"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <div
+        id="mynavbarp2"
+        class="d-flex justify-content-between mt-2 px-4 py-2"
+      >
+        <div>
+          <a class="nav-link active p-0" aria-current="page" href="#">Sale</a>
+        </div>
+        <div>
+          <a class="nav-link active p-0" href="#">Women</a>
+        </div>
         <div>Men</div>
         <div>Kids</div>
         <div>Young Adult</div>
@@ -85,9 +529,11 @@
         <div>Designer</div>
         <div>Gifts</div>
         <div>Brands</div>
-      </div>
+      </div> -->
     </div>
+
     <!-- sign in section -->
+
     <div class="container-fluid px-4">
       <div class="text-center mt-4 p-3 signup">
         <h5><strong>Shop what you love—faster and easier.</strong></h5>
@@ -97,7 +543,9 @@
           </button>
         </div>
       </div>
+
       <!-- hero sectin -->
+
       <div
         id="orangediv"
         class="mt-5 d-flex justify-content-center align-items-center"
@@ -106,21 +554,27 @@
           <h2 class="text-uppercase changeinfont fw-bolder">
             Designer Clearance
           </h2>
-          <h4 class="text-uppercase mt-2 changeinfont fw-bolder">
+          <h4 class="text-uppercase mt-2 changeinfont2 fw-bolder">
             Up to 60% off
           </h4>
           <small
             ><p class="">
               From the best brands of the season.
-              <a href="" class="text-white">Designer sale</a>
+              <a
+                href="https://www.nordstrom.com/browse/sale/designer?campaign=1126desclearance60&jid=j012824-17464&cm_sp=merch-_-designer_17464_j012824-_-hp_0_p99_0&"
+                class="text-white border border-start-0 border-top-0 border-end-0 text-decoration-none border-white"
+                >Designer sale</a
+              >
             </p></small
           >
         </div>
       </div>
-      <!-- background-image -->
-      <div class="bgimage1 mt-4">
-        <div class="mx-auto w-50 bg-text h-25 py-5">
-          <div class="fw-bold">Get a $40 Bonus Note!</div>
+
+      <!-- background-image - 1 -->
+
+      <div class="bgimage1 img-fluid mt-4">
+        <div class="mx-auto w-50 h-25 py-5">
+          <div class="fw-bold fs-6">Get a $40 Bonus Note!</div>
           <div>
             <small>
               An exclusive offer for new Nordstrom credit cardmembers.
@@ -132,7 +586,9 @@
           </div>
         </div>
       </div>
-      <!-- carousel section -->
+
+      <!-- first - carousel section -->
+
       <div
         id="carouselExampleControls"
         class="carousel slide mt-4"
@@ -182,12 +638,13 @@
       </div>
 
       <!-- Product carousel section -->
+
       <div class="fw-bold text-secondary fs-3 lh-base mt-4">
         Great deals on what you love
       </div>
       <div
         id="carouselExampleControlsNoTouching"
-        class="carousel slide"
+        class="carousel slide mt-5"
         data-bs-touch="false"
         data-bs-interval="false"
       >
@@ -361,22 +818,19 @@
               </div>
               <div class="card border-0" style="width: 18rem">
                 <img
-                  src="https://n.nordstrommedia.com/id/sr3/ada0959f-f5ab-4784-8bed-ef50442a3f41.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2"
+                  src="https://n.nordstrommedia.com/id/sr3/f7aefaf8-4c57-4873-a2f6-91751d26b347.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2"
                   class="card-img-top"
                   alt="..."
                 />
                 <div class="card-body">
-                  <p class="card-title fw-light small">David Donohue</p>
+                  <p class="card-title fw-light small">Bernardo</p>
                   <div class="d-flex lh-1 justify-content-between">
                     <small>
-                      <div class="text-danger fw-bold">INR 5,815.22</div>
+                      <div class="text-danger fw-bold">INR 12,753.37</div>
                     </small>
                     <small>
                       <p class="text-muted">
-                        <span class="text-decoration-line-through"
-                          >INR11,630.44</span
-                        >
-                        50% Off
+                        <span class="text-decoration-line-through"></span>
                       </p>
                     </small>
                   </div>
@@ -388,22 +842,19 @@
             <div class="d-flex justify-content-around">
               <div class="card border-0" style="width: 18rem">
                 <img
-                  src="https://n.nordstrommedia.com/id/sr3/64c649ce-32bc-4843-b097-2cd553e57761.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2"
+                  src="https://n.nordstrommedia.com/id/sr3/742aa750-b894-42e3-92bf-7512e5d07f17.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2"
                   class="card-img-top"
                   alt="..."
                 />
                 <div class="card-body">
-                  <p class="card-title fw-light small">W.R.K</p>
+                  <p class="card-title fw-light small">Bernardo</p>
                   <div class="d-flex lh-1 justify-content-between">
                     <small>
-                      <div class="text-danger fw-bold">INR 4,716.34</div>
+                      <div class="text-danger fw-bold">INR 12,737.37</div>
                     </small>
                     <small>
                       <p class="text-muted">
-                        <span class="text-decoration-line-through"
-                          >INR7,860.57</span
-                        >
-                        40% Off
+                        <span class="text-decoration-line-through"></span>
                       </p>
                     </small>
                   </div>
@@ -411,22 +862,19 @@
               </div>
               <div class="card border-0" style="width: 18rem">
                 <img
-                  src="https://n.nordstrommedia.com/id/sr3/934238f7-19fd-415b-8f86-15cef4726907.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2"
+                  src="https://n.nordstrommedia.com/id/sr3/4be820e3-fe4e-47ce-8929-7cdd8a42e01b.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2"
                   class="card-img-top"
                   alt="..."
                 />
                 <div class="card-body">
-                  <p class="card-title fw-light">Nordstrom</p>
+                  <p class="card-title fw-light">Zella</p>
                   <div class="d-flex lh-1 justify-content-between">
                     <small>
-                      <div class="text-danger fw-bold">INR 3,125.78</div>
+                      <div class="text-danger fw-bold">INR 4,732.38</div>
                     </small>
                     <small>
                       <p class="text-muted">
-                        <span class="text-decoration-line-through"
-                          >INR8012.17</span
-                        >
-                        60% Off
+                        <span class="text-decoration-line-through"></span>
                       </p>
                     </small>
                   </div>
@@ -434,7 +882,7 @@
               </div>
               <div class="card border-0" style="width: 18rem">
                 <img
-                  src="https://n.nordstrommedia.com/id/sr3/c72d5188-2bed-4cc8-a817-6365833204bb.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2"
+                  src="https://n.nordstrommedia.com/id/sr3/f96862b5-9268-4a63-93a5-9b7e05cb5fc0.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2"
                   class="card-img-top"
                   alt="..."
                 />
@@ -442,14 +890,14 @@
                   <p class="card-title fw-light">Nordstrom</p>
                   <div class="d-flex lh-1 justify-content-between">
                     <small>
-                      <div class="text-danger fw-bold">INR 2,787.29</div>
+                      <div class="text-danger fw-bold">INR 4,804.57</div>
                     </small>
                     <small>
                       <p class="text-muted">
                         <span class="text-decoration-line-through"
-                          >INR5574.59</span
+                          >INR9544.98</span
                         >
-                        50% Off
+                        49% Off
                       </p>
                     </small>
                   </div>
@@ -457,24 +905,21 @@
               </div>
               <div class="card border-0" style="width: 18rem">
                 <img
-                  src="https://n.nordstrommedia.com/id/sr3/ada0959f-f5ab-4784-8bed-ef50442a3f41.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2"
+                  src="https://n.nordstrommedia.com/id/sr3/aff4089a-94b3-4c45-8b04-607475011120.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2"
                   class="card-img-top"
                   alt="..."
                 />
                 <div class="card-body">
                   <p class="card-title fw-light">
-                    <small>David Donohue</small>
+                    <small>Spanx®</small>
                   </p>
                   <div class="d-flex lh-1 justify-content-between">
                     <div class="text-danger fw-bold">
-                      <small>INR 5,815.22</small>
+                      <small>INR 7,860.57</small>
                     </div>
                     <small>
                       <p class="text-muted">
-                        <span class="text-decoration-line-through"
-                          >INR11,630.44</span
-                        >
-                        50% Off
+                        <span class="text-decoration-line-through"></span>
                       </p>
                     </small>
                   </div>
@@ -503,9 +948,10 @@
         </button>
       </div>
 
-      <!-- Section bg-image -->
+      <!-- Section bg-image - 2 -->
+
       <div class="bgimage2 mt-2">
-        <div class="text-white india d-xxl-none d-none d-lg-block small">
+        <div class="text-white bg2text d-xxl-none d-none d-lg-block small">
           <div>Get to know the visionaries behind Black-owned brands.</div>
           <div class="d-flex mt-2">
             <div class="border border-start-0 border-top-0 border-end-0">
@@ -563,7 +1009,7 @@
         </div>
       </div>
 
-      <!-- Section row -->
+      <!-- Section - Shop by Category -->
 
       <div class="mt-5 text-center fs-5 fw-bold text-uppercase lettersphead">
         Shop by Category
@@ -631,7 +1077,19 @@
         </div>
       </div>
 
-      <!-- Section diff -->
+      <!-- Pick up animation section -->
+
+      <div class="mt-5">
+        <div class="bgimage3">
+          <p><strong>Pick Up Today</strong></p>
+          <div>
+            <p class="small mb-0">In store or curbside.</p>
+            <a href="#" class="small text-dark">Set Your Store</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section - currenty loving -->
 
       <div class="mt-5 fw-bold fs-5 text-center">Currently Loving</div>
       <div class="fw-light text-center mt-2">
@@ -682,6 +1140,7 @@
       </div>
 
       <!-- Back to top button -->
+
       <a
         id="back-to-top"
         href="#"
@@ -692,7 +1151,49 @@
     </div>
 
     <!-- Footer -->
-    <footer></footer>
+
+    <!-- <footer></footer> -->
+
+    <!-- shows modal when page is fully loaded -->
+
+    <div class="modal" tabindex="-1" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0 pb-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h4 class="fw-normal mb-1">We Ship to India</h4>
+            <p class="small fw-bold mb-2">
+              <small>A few things to know :</small>
+            </p>
+            <ul class="small fw-light lh-sm">
+              <li>Prices and payment are shown in INR.</li>
+              <li>
+                International shipping costs are based on your items, shipping
+                method and destination.
+              </li>
+              <li>
+                Not shipping to India?
+                <span class="text-decoration-underline"
+                  ><a href="#" class="text-dark">Change your country</a></span
+                >
+              </li>
+            </ul>
+            <p class="small">
+              <a href="#" class="text-dark">Get more details</a> or
+              <a href="#" class="text-dark">contact us</a>
+              if you have questions about international shipping.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -700,55 +1201,4 @@
     ></script>
   </body>
 </html>
-<script>
-  function URLchangeHandler1() {
-    window.location.href =
-      "https://www.nordstrom.com/browse/women/all?campaign=0301hpdtwmn&jid=j012040-14745&cid=e9bsm&cm_sp=merch-_-multi-div_14745_j012040-_-hp_corp_persnav_shop&";
-  }
-  function URLchangeHandler2() {
-    window.location.href =
-      "https://www.nordstrom.com/browse/men/all?campaign=0301hpdtmn&jid=j012040-14745&cid=29spt&cm_sp=merch-_-multi-div_14745_j012040-_-hp_corp_persnav_shop&";
-  }
-
-  function URLchangeHandler3() {
-    window.location.href =
-      "https://www.nordstrom.com/browse/kids/all?campaign=0301hpdtkids&jid=j012040-14745&cid=qa7of&cm_sp=merch-_-multi-div_14745_j012040-_-hp_corp_persnav_shop&";
-  }
-  function URLchangeHandler4() {
-    window.location.href =
-      "https://www.nordstrom.com/browse/home/all?campaign=0301cahpdthome&jid=j012040-14745&cid=dl9i5&cm_sp=merch-_-multi-div_14745_j012040-_-hp_corp_persnav_shop&";
-  }
-  function URLchangeHandler5() {
-    window.location.href =
-      "https://www.nordstrom.com/browse/beauty/all?campaign=0301hpdtbty&jid=j012040-14745&cid=dbwjn&cm_sp=merch-_-multi-div_14745_j012040-_-hp_corp_persnav_shop&";
-  }
-  function URLchangeHandler6() {
-    window.location.href =
-      "https://www.nordstrom.com/browse/designer/new?campaign=0301hpdtdsg&jid=j012040-14745&cid=wnpjm&cm_sp=merch-_-multi-div_14745_j012040-_-hp_corp_persnav_shop&";
-  }
-
-  //Get the button
-  var backtoTopbtn = document.getElementById("back-to-top");
-
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function () {
-    scrollFunction();
-  };
-
-  function scrollFunction() {
-    if (
-      document.body.scrollTop > 1000 ||
-      document.documentElement.scrollTop > 1000
-    ) {
-      backtoTopbtn.style.display = "block";
-    } else {
-      backtoTopbtn.style.display = "none";
-    }
-  }
-
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-</script>
+<script src="index.js"></script>
