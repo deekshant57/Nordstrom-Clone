@@ -1,91 +1,86 @@
-
 .bg-text {
   font-size: smaller;
 }
 
-
-.signin1{
+.signin1 {
   width: 22%;
- 
+
   height: 300px;
   margin: 100px auto;
 }
 
-.fontsize{
-
+.fontsize {
   font-size: 12px;
 }
-.anoh1{
+.anoh1 {
   height: 600px;
-  
 }
 .required:after {
-  content:"*";
+  content: "*";
   color: red;
 }
-.required1::before{
-  content:"*";
+.required1::before {
+  content: "*";
   color: red;
 }
-.showpwd{
+.showpwd {
   position: absolute;
   margin: 10px 0 0 -45px;
   color: black;
   font-weight: lighter;
   font-size: 13px;
-  
 }
-.showpwd:hover{
+.showpwd:hover {
   color: black;
 }
-#hidepwd{
+#hidepwd {
   display: none;
 }
 
-.edit1{
+.edit1 {
   color: black;
   margin-left: 40%;
 }
 
-.edit1:hover{
+.edit1:hover {
   color: black;
 }
 
-#getdata{
+#getdata {
   margin-top: -5px;
   /* margin-left: -0px; */
 }
-#heigth{
+#heigth {
   height: 50px;
 }
-.bg-color{
+.bg-color {
   background-color: black;
   color: white;
 }
-.btn{
+.btnsignin {
   border-radius: 0px;
   height: 40px;
 }
-.btn:hover{
+.btnsignin:hover {
   background-color: rgb(73, 68, 68);
   color: white;
 }
-#email{
+#email {
   border-radius: 0px;
   height: 40px;
 }
-#inputpwd{
+#inputpwd {
   border-radius: 0px;
   height: 40px;
 }
-.textblack{
+.textblack {
   color: black;
 }
-.textblack:hover{
+.textblack:hover {
   color: black;
 }
 
-.question{
+.question {
   font-size: 15px;
   color: rgb(112, 102, 102);
 }
