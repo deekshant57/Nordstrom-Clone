@@ -12,7 +12,6 @@ padding-right: 40px;
 #blockelem > div {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 10px;
-  
 }
 /* #blockelem h6,
 p {
@@ -37,11 +36,7 @@ justify-content: space-between;
   justify-content: space-between;
   margin-left: -5px;
 }
-#wholediv {
-  margin: auto;
-  width: 65%;
-  display: flex;
-}
+
 #wholediv > div {
   border: black;
 }
@@ -57,19 +52,11 @@ justify-content: space-between;
 .fontsize2 {
   font-size: 12px;
 }
-#rightnav {
-  margin-top: 50px;
-  position: fixed;
-  top: 0px;
-  overflow-x: hidden;
-}
 
-#deltebtn{
+#deltebtn {
   background-color: white;
   border: 0px;
-  
 }
-.applybtn{
+.applybtn {
   height: 22px;
 }
-
