@@ -69,6 +69,10 @@
   border-radius: 0px;
   height: 40px;
 }
+.creatname {
+  border-radius: 0px;
+  height: 40px;
+}
 #inputpwd {
   border-radius: 0px;
   height: 40px;
@@ -83,4 +87,37 @@
 .question {
   font-size: 15px;
   color: rgb(112, 102, 102);
+}
+
+.rack {
+  width: 60px;
+  margin: 0px 0px 0px 50px;
+}
+.nord {
+  color: gray;
+  margin-top: 22px;
+}
+
+.warnin {
+  color: #e33e5f;
+}
+#warn {
+  display: none;
+}
+
+.pop {
+  /* visibility: hidden; */
+  display: none;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  position: absolute;
+  width: 350px;
+  bottom: 330px;
+  background: #fff;
+}
+
+p:hover .pop {
+  /* visibility: visible; */
+  background-color: red;
+  display: block;
 }

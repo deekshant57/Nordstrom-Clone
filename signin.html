@@ -4498,9 +4498,18 @@
         <div class="fontsize fw-light mt-4">
           <p>
             By tapping Next, you agree to our
-            <a href="#" class="textblack"> Privacy Policy</a>
+            <a
+              href="https://www.nordstrom.com/browse/customer-service/policy/privacy"
+              class="textblack"
+            >
+              Privacy Policy</a
+            >
             and
-            <a href="#" class="textblack">Terms & Conditions.</a>
+            <a
+              href="https://www.nordstrom.com/browse/customer-service/policy/terms-conditions"
+              class="textblack"
+              >Terms & Conditions.</a
+            >
           </p>
         </div>
         <div onclick="creatfun()">
@@ -4521,11 +4530,35 @@
 </html>
 <script>
   document.querySelector("form").addEventListener("submit", creatfun);
+  var emailarr = JSON.parse(localStorage.getItem("email")) || [];
   function creatfun(event) {
     event.preventDefault();
     var email = document.querySelector("#email").value;
     // console.log(email);
-    localStorage.setItem("email", JSON.stringify(email));
-    window.location.href = "signup.html";
+
+    localStorage.setItem("newlogin", JSON.stringify(email));
+
+    if (
+      emailarr.some((emaildata) => {
+        return emaildata.email == email;
+      })
+    ) {
+    } else {
+      var emaildata = {
+        email: email,
+      };
+      emailarr.push(emaildata);
+      localStorage.setItem("email", JSON.stringify(emailarr));
+      // window.location.href="creat.html";
+      // console.log(email);
+    }
+
+    for (var i = 0; i < emailarr.length; i++) {
+      if (emailarr[i].email === email) {
+        window.location.href = "login1.html";
+      } else {
+        window.location.href = "creat1.html";
+      }
+    }
   }
 </script>
