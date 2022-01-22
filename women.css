@@ -1,0 +1,235 @@
+#blockelem {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px 50px;
+}
+#avatar {
+  width: 100%;
+}
+#blockelem > div:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* #blockelem > div > div > button:hover {
+  background-color: black;
+} */
+/* #avatar>img:hover {
+  background-color: ;
+} */
+/* p {
+  padding: 10px;
+} */
+
+#filandblo {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+#bimage {
+  width: 100%;
+}
+/* .bgimagemen {
+  background-image: url("https://n.nordstrommedia.com/id/b71a93a9-97ba-4d25-ac16-b3c5ef63d673.jpeg?h=417&w=1334");
+  height: 100%;
+
+  /*width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; */
+/* position: relative; 
+} */
+.bgimage1 {
+  background-image: url("https://n.nordstrommedia.com/id/b71a93a9-97ba-4d25-ac16-b3c5ef63d673.jpeg?h=417&w=1334");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: relative; */
+}
+#sidenavbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  width: auto;
+}
+.accordion-icon:after {
+  content: "\2212";
+  width: 0px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  right: 20px;
+  top: 11px;
+  position: absolute;
+}
+
+.accordion-icon.collapsed:after {
+  content: "\002B";
+}
+
+#accordion-icon > h2 {
+  width: 100%;
+}
+
+.bagAndwishlist > div > button:hover {
+  color: red;
+  font-size: larger;
+}
+
+.bagAndwishlist {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.wishlist {
+  border: 0px;
+  font-size: 25px;
+  background-color: white;
+}
+
+#blockelem > div:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* PRODUCT BRAND */
+.productbrand {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+/* PRODUCT NAME */
+.productname {
+  font-size: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+/* PRODUCT COST */
+.Productcost {
+  padding: 10px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+  font-size: 15px;
+}
+
+/* PRODUCT BAG */
+.bag {
+  width: 80px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border: 0px;
+}
+.bagAndwishlist > button:hover {
+  height: 35px;
+  width: 85px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* PRODUCT COST */
+/* .div3 {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 18px;
+} */
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+  #blockelem {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #nav {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 720px) {
+  #blockelem {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.form-check > input {
+  border-radius: 0px;
+}
+.form-check > input:checked {
+  background-color: black;
+  border-color: white;
+}
+.chekblack:checked {
+  background-color: black;
+  border-color: white;
+}
+#buttonH {
+  height: 50px;
+}
+.bg-pink {
+  background-color: fuchsia;
+}
+.bg-grey {
+  background-color: gray;
+}
+.bg-peach {
+  background-color: peachpuff;
+}
+.bg-yellow {
+  background-color: yellow;
+}
+#mynavbar {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  /* font-family: 'Roboto', sans-serif; */
+}
+#mynavbarp2 {
+  font-weight: 400;
+  font-size: smaller;
+}
+.dropdownNS {
+  /* float: left; */
+  overflow: hidden;
+}
+
+.dropdownNS:hover .btn {
+  border-bottom: 1.5px solid black;
+}
+.megaContent {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+}
+.dropdownNS:hover .megaContent {
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+.megaColumn {
+  /* float: left; */
+  width: 100%;
+  /* height: 90vh; */
+  background-color: #fff;
+}
+.megaColumn a:hover {
+  border-bottom: 1.5px solid black;
+  font-weight: 500;
+}
+.fs-h1 {
+  font-size: 14px;
+}
+
+/* footer */
+footer {
+  background-color: #f9f9f9;
+}
+footer ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
