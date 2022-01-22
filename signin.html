@@ -383,7 +383,7 @@
                     <ul class="list-unstyled d-flex flex-column">
                       <li class="mb-2">
                         <a
-                          href="#"
+                          href="kid.html"
                           class="fw-bolder text-dark text-decoration-none fs-h1"
                           >Kids</a
                         >
@@ -522,7 +522,12 @@
             </div>
           </div>
           <div class="dropdownNS">
-            <button class="btn small p-0"><small>Women</small></button>
+            <button
+              class="btn small p-0"
+              onclick="window.location.href='women.html'"
+            >
+              <small>Women</small>
+            </button>
             <div class="megaContent">
               <div class="megaRow d-flex justify-content-around pt-5 lh-lg">
                 <div class="megaColumn">
@@ -1020,7 +1025,12 @@
             </div>
           </div>
           <div class="dropdownNS">
-            <button class="btn small p-0"><small>Men</small></button>
+            <button
+              class="btn small p-0"
+              onclick="window.location.href='men.html'"
+            >
+              <small>Men</small>
+            </button>
             <div class="megaContent">
               <div class="megaRow d-flex justify-content-around pt-5 lh-lg">
                 <div class="megaColumn">
@@ -1506,7 +1516,12 @@
             </div>
           </div>
           <div class="dropdownNS">
-            <button class="btn small p-0"><small>Kids</small></button>
+            <button
+              class="btn small p-0"
+              onclick="window.location.href='kid.html'"
+            >
+              <small>Kids</small>
+            </button>
             <div class="megaContent">
               <div class="megaRow d-flex justify-content-around pt-5 lh-lg">
                 <div class="megaColumn">
@@ -4498,9 +4513,18 @@
         <div class="fontsize fw-light mt-4">
           <p>
             By tapping Next, you agree to our
-            <a href="#" class="textblack"> Privacy Policy</a>
+            <a
+              href="https://www.nordstrom.com/browse/customer-service/policy/privacy"
+              class="textblack"
+            >
+              Privacy Policy</a
+            >
             and
-            <a href="#" class="textblack">Terms & Conditions.</a>
+            <a
+              href="https://www.nordstrom.com/browse/customer-service/policy/terms-conditions"
+              class="textblack"
+              >Terms & Conditions.</a
+            >
           </p>
         </div>
         <div onclick="creatfun()">
@@ -4521,11 +4545,35 @@
 </html>
 <script>
   document.querySelector("form").addEventListener("submit", creatfun);
+  var emailarr = JSON.parse(localStorage.getItem("email")) || [];
   function creatfun(event) {
     event.preventDefault();
     var email = document.querySelector("#email").value;
     // console.log(email);
-    localStorage.setItem("email", JSON.stringify(email));
-    window.location.href = "signup.html";
+
+    localStorage.setItem("newlogin", JSON.stringify(email));
+
+    if (
+      emailarr.some((emaildata) => {
+        return emaildata.email == email;
+      })
+    ) {
+    } else {
+      var emaildata = {
+        email: email,
+      };
+      emailarr.push(emaildata);
+      localStorage.setItem("email", JSON.stringify(emailarr));
+      // window.location.href="creat.html";
+      // console.log(email);
+    }
+
+    for (var i = 0; i < emailarr.length; i++) {
+      if (emailarr[i].email === email) {
+        window.location.href = "login1.html";
+      } else {
+        window.location.href = "creat1.html";
+      }
+    }
   }
 </script>
