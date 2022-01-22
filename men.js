@@ -873,26 +873,46 @@ var data = JSON.parse(localStorage.getItem("data"))
         div2.append(btn,wishList);
 
         div2.setAttribute("class","bagAndwishlist")
-        var inr = document.createElement("p");
-        inr.textContent = "INR";
+
+        // var inr = document.createElement("p");
+        // inr.textContent = "INR";
         // var div3 = document.createElement("div");
         // div3.append(inr,cost);
         // div3.setAttribute("class","div3");
+        var alrtdiv = document.createElement("div");
+    alrtdiv.classList.add("d-none", "alert", "alert-success");
+    alrtdiv.setAttribute("role", "alert");
+    // alrtdiv.innerHTML = "<div>Added Successfully</div>";
+    alrtdiv.textContent = "Added Successfully";
 
-        div.append(avatar,h4,h5,cost,div2);
-        document.querySelector("#blockelem").append(div);
+    var alrtclosebtn = document.createElement("button");
+    alrtclosebtn.setAttribute("type", "button");
+    alrtclosebtn.setAttribute("data-bs-dismiss", "alert");
+    alrtclosebtn.setAttribute("aria-label", "Close");
+    alrtclosebtn.classList.add("btn-close", "ms-1");
+    alrtdiv.append(alrtclosebtn);
+    alrtclosebtn.addEventListener("click", function () {
+      alrtdiv.classList.add("d-none");
+      // alrtdiv.style.display = "none";
+      console.log("object");
     });
-  }
-    
-    function addtobag(elem)
+        div.append(avatar,h4,h5,cost,div2,alrtdiv);
+        document.querySelector("#blockelem").append(div);
+        function addtobag(elem)
     {
         cartarr.push(elem)
         console.log(cartarr)
-        alert("added to bag")
+        alrtdiv.classList.remove("d-none");
+        // alert("added to bag")
+        
     
     localStorage.setItem("cartitem",JSON.stringify(cartarr))
     
     }
+    });
+  }
+    
+    
     function addtowishlist(elem) {
             wishlistarr.push(elem)
             console.log(wishlistarr)

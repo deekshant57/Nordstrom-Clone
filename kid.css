@@ -26,9 +26,41 @@
   top: 11px;
   position: absolute;
 }
+.accordion-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    border-radius 0.15s ease;
+}
 
 .accordion-icon.collapsed:after {
   content: "\002B";
+}
+.bg-pink {
+  background-color: fuchsia;
+}
+.bg-grey {
+  background-color: gray;
+}
+.bg-maroon {
+  background-color: maroon;
+}
+.bg-orange {
+  background-color: orangered;
+}
+.bg-gold {
+  background-color: gold;
 }
 
 .form-check > input {
