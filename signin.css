@@ -1,0 +1,91 @@
+
+.bg-text {
+  font-size: smaller;
+}
+
+
+.signin1{
+  width: 22%;
+ 
+  height: 300px;
+  margin: 100px auto;
+}
+
+.fontsize{
+
+  font-size: 12px;
+}
+.anoh1{
+  height: 600px;
+  
+}
+.required:after {
+  content:"*";
+  color: red;
+}
+.required1::before{
+  content:"*";
+  color: red;
+}
+.showpwd{
+  position: absolute;
+  margin: 10px 0 0 -45px;
+  color: black;
+  font-weight: lighter;
+  font-size: 13px;
+  
+}
+.showpwd:hover{
+  color: black;
+}
+#hidepwd{
+  display: none;
+}
+
+.edit1{
+  color: black;
+  margin-left: 40%;
+}
+
+.edit1:hover{
+  color: black;
+}
+
+#getdata{
+  margin-top: -5px;
+  /* margin-left: -0px; */
+}
+#heigth{
+  height: 50px;
+}
+.bg-color{
+  background-color: black;
+  color: white;
+}
+.btn{
+  border-radius: 0px;
+  height: 40px;
+}
+.btn:hover{
+  background-color: rgb(73, 68, 68);
+  color: white;
+}
+#email{
+  border-radius: 0px;
+  height: 40px;
+}
+#inputpwd{
+  border-radius: 0px;
+  height: 40px;
+}
+.textblack{
+  color: black;
+}
+.textblack:hover{
+  color: black;
+}
+
+.question{
+  font-size: 15px;
+  color: rgb(112, 102, 102);
+}

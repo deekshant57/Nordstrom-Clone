@@ -88,9 +88,19 @@
 
         <!-- sign-in -->
         <div class="signin1">
-            <p class=" fs-4">Sign In | Create Account</p>
-            <p class="fw-light  fontsize">Enter your email to get started</p>
-            <h6 class="fontsize">Email</h6>
+            <p class=" fs-4">Welcome back!</p>
+            <p class="fw-light  fontsize">Sign in with same info at:</p>
+            <h6 class="fontsize mb-0">Email</h6>
+            <div class="fw-light fontsize  d-flex">
+                <p id="getdata" > </p>
+                  <a href="#"  class="edit1"  onclick="window.location.href='singin.html'" >Edit</a>
+                  
+            </div>
+
+
+
+
+            <h6 class="fontsize">Password <i class="bi bi-question-circle-fill question"></i></h6>
             <form >
                 <input id="email" type="email" class="w-100 inputhei " required />
                 <div class="fontsize fw-light mt-4 " >
@@ -111,12 +121,8 @@
 </html>
 
 <script>
-     document.querySelector('form').addEventListener('submit',creatfun);
-    function creatfun(event){
-        event.preventDefault();
-      var email = document.querySelector("#email").value;
-      // console.log(email);
-       localStorage.setItem("email", JSON.stringify(email))
-       window.location.href="creat.html";
-    }
+    var login = JSON.parse(localStorage.getItem("email"));
+
+console.log(login)
+document.querySelector("#getdata").append(login);
 </script>
