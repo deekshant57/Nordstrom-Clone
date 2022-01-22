@@ -77,11 +77,12 @@
   background-size: cover;
 }
 #sidenavbar {
-  position: sticky;
-  top: 0;
+  /* position: sticky; */
+  /* top: 0; */
   /* left: 0; */
   /* overflow-x: hidden; */
   width: auto;
+  /* overflow-y: scroll; */
 }
 .accordion-icon:after {
   content: "\2212";
@@ -92,6 +93,24 @@
   right: 20px;
   top: 11px;
   position: absolute;
+}
+
+.accordion-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    border-radius 0.15s ease;
 }
 
 .accordion-icon.collapsed:after {
