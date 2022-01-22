@@ -76,13 +76,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* SIDE NAVIGATION */
 #sidenavbar {
-  /* position: sticky; */
-  /* top: 0; */
-  /* left: 0; */
-  /* overflow-x: hidden; */
+  position: sticky;
+  top: 0;
   width: auto;
-  /* overflow-y: scroll; */
 }
 .accordion-icon:after {
   content: "\2212";
@@ -120,7 +119,21 @@
 #accordion-icon > h2 {
   width: 100%;
 }
-
+.bg-pink {
+  background-color: fuchsia;
+}
+.bg-grey {
+  background-color: gray;
+}
+.bg-maroon {
+  background-color: maroon;
+}
+.bg-orange {
+  background-color: orangered;
+}
+.bg-gold {
+  background-color: gold;
+}
 /* WISHLIST */
 .wishlist {
   border: 0px;
