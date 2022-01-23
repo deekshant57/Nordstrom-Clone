@@ -4533,11 +4533,21 @@
         <div class="required">
           <label class="fontsize">First name</label>
         </div>
-        <input type="text" class="w-100 inputhei" required />
+        <input
+          id="first"
+          type="text"
+          class="w-100 inputhei creatname"
+          required
+        />
         <div class="required">
           <label class="fontsize mt-4">Last name</label>
         </div>
-        <input type="text" class="w-100 inputhei" required />
+        <input
+          id="last"
+          type="text"
+          class="w-100 inputhei creatname"
+          required
+        />
         <div class="required">
           <label class="fontsize mt-4">Create password</label>
         </div>
@@ -4665,13 +4675,53 @@
     ></script>
   </body>
 </html>
-
 <script>
-  var login = JSON.parse(localStorage.getItem("email"));
+  document.querySelector("form").addEventListener("submit", redirectfun);
 
-  // console.log(login);
+  function redirectfun(even) {
+    event.preventDefault();
+
+    var first = document.querySelector("#first").value;
+    var last = document.querySelector("#last").value;
+    var pas = document.querySelector("#inputpwd").value;
+    console.log(first, last, pas);
+
+    if (first === "" || last === "" || pas === "") {
+      alert("somthing went worng");
+    } else {
+      window.location.href = "login.html";
+    }
+  }
+
+  var login = JSON.parse(localStorage.getItem("newlogin"));
+
+  console.log(login);
   document.querySelector("#getdata").append(login);
-  // click on show password to show.
+  var passarr = JSON.parse(localStorage.getItem("password")) || [];
+
+  function creatfun(event) {
+    //  event.preventDefault();
+    var password = document.querySelector("#inputpwd").value;
+    // console.log(password);
+    if (
+      passarr.some((passdata) => {
+        return passdata.passwor == password;
+      })
+    ) {
+      console.log("no");
+    } else {
+      var passdata = {
+        passwor: password,
+      };
+      passarr.push(passdata);
+      localStorage.setItem("password", JSON.stringify(passarr));
+
+      console.log("yes");
+    }
+
+    //  window.location.href='login1.html';
+  }
+
   function showpass() {
     var input = document.querySelector("#inputpwd");
     var show = document.querySelector("#showpwd");
@@ -4687,6 +4737,4 @@
       hide.style.display = "none";
     }
   }
-
-  // Save data to local
 </script>
