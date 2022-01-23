@@ -53,4 +53,4 @@ function topFunction() {
 // show modal when page loads
 
 var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
-// myModal.show();
+myModal.show();
