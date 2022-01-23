@@ -10,7 +10,7 @@ Nordstrom, Inc. is an American luxury department store chain. Founded in 1901 by
 - JAVASCRIPT
 - BOOTSTRAP5
 - Browser LocalStorage as a database
-- Live project (nordstromclone.netlify.app)
+- Live project (https://nordstromclone.netlify.app)
 
 ## Installing and Running
 <!-- <hr> -->
