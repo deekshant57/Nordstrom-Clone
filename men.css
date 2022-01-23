@@ -6,13 +6,7 @@
 #mynavbarp2 {
   font-weight: 400;
   font-size: smaller;
-} /*
-#mynavbarp2 {
-  font-weight: 400;
-} */
-/* .myfont {
-  font-size: smaller;
-} */
+}
 .dropdownNS {
   /* float: left; */
   overflow: hidden;
@@ -218,7 +212,7 @@
   border-color: white;
 }
 
-/* footer */
+/* FOOTER */
 footer {
   background-color: #f9f9f9;
 }
