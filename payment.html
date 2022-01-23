@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="payment.css.css" />
+    <title>
+      Nordstrom Online & In Store: Shoes, Jewelry, Clothing, Makeup, Dresses
+    </title>
+  </head>
+  <body>
+    <div id="mynavbar">
+      <!-- Navbar part -1 -->
+      <div style="background-color: white">
+        <nav class="navbar navbar-expand-lg navbar-light pt-4">
+          <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="https://n.nordstrommedia.com/alias/nordstrom-logo.svg"
+                alt=""
+                class="img-fluid"
+                height="17px"
+                width="200px"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <div class="text-decoration-none">
+                <div
+                  class="d-inline ms-2"
+                  onclick="window.location.href='signin.html'"
+                >
+                  <!-- <img src="shopping-cart.png" href="" alt="" /> -->
+                  <i class="bi bi-chevron-down"></i>
+                </div>
+                <div class="d-inline ms-2"><i class="bi bi-bag"></i></div>
+               
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    </div>
+
+
+<div id="container3">
+
+<div id="container1">
+    <div class="form-1" id="cart">
+      <div class="mb-3">
+       
+          <h5>Checkout</h5>
+
+          <a href="">Edit Shopping Bag</a>
+          <p>Pickup or delivery</p>
+          <p>Delivery only - pickup not available</p>
+          <a href=""> Change shipping speed</a>
+     
+      </div>
+    </div>
+
+    
+    <div class="form-1">
+      <!-- <h5><img src="images/gift.png" alt="" /> Gift options</h5> -->
+      <p>Does your order include a gift?</p>
+      <a href="">Choose gift options</a>
+    </div>
+   
+
+    <div class="form-1">
+      <div class="mb-3">
+        <h5>Contact Info</h5>
+        <label for="exampleFormControlInput1" class="form-label">
+          Email <span><i class="one">(for order updates)</i></span
+          ><span style="color: red">*</span>
+        </label>
+        <input
+          type="email"
+          class="form-control name1"
+          id="exampleFormControlInput1"
+          placeholder=""
+          class="check"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">
+          Phone No. <span><i class="one">(for order updates)</i></span
+          ><span style="color: red">*</span></label
+        >
+        <input
+          type="email"
+          class="form-control name1"
+          id="exampleFormControlInput1"
+          placeholder=""
+          class="check"
+        />
+        <a href=""> Free shipping to a Nordstrom or Nordstrom Rack Store</a>
+      </div>
+    </div>
+
+    <div class="form-1">
+      <!-- <img style="width: 90px; float: left" src="hand.jpeg" alt="" /> -->
+      <p>Nordstorm Card</p>
+      <p>
+        Get a $40 Bonus Note when you use a new Nordstrom credit card.
+        <a href="">Apply Now</a>
+      </p>
+    </div>
+
+    <div class="form-1">
+      <div class="mb-3">
+        <h5>Payement</h5>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" >
+          <label class="form-check-label" for="flexRadioDefault1">
+            <i class="bi bi-credit-card"></i><span>Credit Card</span>
+          </label>
+        </div>
+
+        <label for="exampleFormControlInput1" class="form-label">
+          Card Number<span style="color: red">*</span>
+        </label>
+        <input
+          type="email"
+          class="form-control name1"
+          id="exampleFormControlInput1"
+          placeholder=""
+          class="check"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">
+          Expiration Date<span style="color: red">*</span>
+        </label>
+        <input
+          type="email"
+          class="form-control name1"
+          id="exampleFormControlInput1"
+          placeholder=""
+          class="check"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">
+          Security Code <span style="color: red">*</span></label
+        >
+        <input
+          type="text"
+          class="form-control name1"
+          id="exampleFormControlInput1"
+          placeholder=""
+          name="search"
+          onclick=""
+          class="check"
+        />
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Same as Shipping Address
+        </label>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">
+          First Name<span style="color: red">*</span>
+        </label>
+        <input
+          type="email"
+          class="form-control name1"
+          id="exampleFormControlInput1"
+          placeholder=""
+          class="check"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">
+          Last Name<span style="color: red">*</span>
+        </label>
+        <input
+          type="email"
+          class="form-control name1"
+          id="exampleFormControlInput1"
+          placeholder=""
+          class="check"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"> <i class="bi bi-search"></i>
+          Address <span style="color: red">*</span></label
+        > 
+        
+        <input
+          type="text"
+          class="form-control name1 icon"
+          id="exampleFormControlInput1"
+          placeholder="quickly find your adddress"
+          name="search"
+          onclick=""
+          class="check"
+        />
+      </div>
+   
+
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        <i class="bi bi-paypal"></i>
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label class="form-check-label" for="flexRadioDefault2">
+        <i class="bi bi-bank2"></i>
+      </label>
+    </div>
+
+  </div>
+
+    
+
+    <div class="form-1">
+      <h5>Review Order</h5>
+      <table>
+        <tr>
+          <td>Your Items</td>
+          <td class="items"></td>
+        </tr>
+        <tr>
+          <td>shipping</td>
+          <td>free</td>
+        </tr>
+        <tr>
+          <td>Estimated Tax</td>
+          <td>free</td>
+        </tr>
+        <tr>
+          <td id="tr1">Estimated Total</td>
+          <td class="grandtotal">0</td>
+        </tr>
+      </table>
+
+      <!-- <hr style="width: 300px" />
+      <button type="button" class="btn btn-dark order" id="order">Review Order</button>
+      
+    </div> -->
+
+  </div>
+
+  <div id=container2>
+    <div class="form-1" id="second">
+      <h5>confirmed Order</h5>
+      <table>
+        <tr>
+          <td>Your Items</td>
+          <td class="items1">0</td>
+        </tr>
+        <tr>
+          <td>shipping</td>
+          <td>free</td>
+        </tr>
+        <tr>
+          <td>Estimated Tax</td>
+          <td>free</td>
+        </tr>
+       
+        <tr class="tr1">
+          <td>Estimated Total</td>
+          <td class="grandtotal1">0</td>
+        </tr>
+      </table>
+     
+      <button type="button" class="btn btn-dark order" id="order">payment</button>
+      <p>Need help? Call 1.888.282.6060 or<span><a href="">chat with </a></span> </p>
+    </div>
+  </div>
+
+
+
+</div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+<script>
+  var length = JSON.parse(localStorage.getItem("length"))
+  document.querySelector(".items").textContent= length
+  console.log(length)
+      var total = JSON.parse(localStorage.getItem("total"))
+  document.querySelector(".grandtotal").textContent= total
+  document.querySelector(".items1").textContent= length
+  document.querySelector(".grandtotal1").textContent= total
+  document.querySelector("#order").addEventListener("click",function()
+  {
+    console.log("teja")
+    var name = document.querySelectorAll(".name1")
+
+for(var i=0; i<name.length; i++)
+{
+   if(!name[i].value)
+   {
+    alert("Enter all value")
+    break;
+   }
+   else{
+    window.location.href='otp.html'
+   }
+}
+
+
+  });
+
+  
+  
+  
+</script>
+
+
+

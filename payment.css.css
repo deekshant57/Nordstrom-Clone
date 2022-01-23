@@ -1,0 +1,83 @@
+body {
+  background-color: whitesmoke !important;
+}
+.form-1 {
+  width: 500px;
+  padding: 40px;
+  background-color: white;
+  font-size: 15px;
+}
+.name1 {
+  width: 300px;
+}
+#container1 {
+  margin-left: 400px;
+  display: grid;
+  grid-template-columns: 500px;
+
+  grid-gap: 20px;
+  background-color: whitesmoke;
+}
+td {
+  width: 250px;
+}
+
+.order {
+  width: 300px;
+}
+
+#paypal {
+  margin-left: 5px;
+}
+#container2 {
+  grid-gap: 20px;
+  width: 450px;
+  margin-left: 20px;
+}
+#mynavbar {
+  background-color: white;
+}
+
+#container3 {
+  display: flex;
+  background-color: whitesmoke;
+  padding-top: 20px;
+}
+#second {
+  width: 350px;
+  padding-left: 20px;
+  background-color: white;
+}
+.tr1 {
+  border-top: 1px solid;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+button {
+  margin-top: 10px;
+  border-radius: -5px;
+}
+.icon {
+  padding-left: 35px;
+  background: url("search.png.png") no-repeat left;
+  background-size: 20px;
+}
+:placeholder-shown {
+  font-size: 15px;
+}
+a {
+  color: #4a86bc;
+}
+label {
+  font-weight: bold;
+}
+#cart {
+  height: 500px;
+}
+#container2 > .form1 {
+  width: 400px;
+}
+.one {
+  font-style: italic;
+  font-weight: lighter;
+}
