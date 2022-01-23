@@ -1,4 +1,6 @@
 var wishlistarr = JSON.parse(localStorage.getItem("wishlist")) || []
+var cartarr = JSON.parse(localStorage.getItem("cartitem"))
+var wishtocart= wishlistarr
     console.log(wishlistarr)
         diswish(wishlistarr);
         function diswish(wishlistarr)
@@ -20,9 +22,17 @@ var wishlistarr = JSON.parse(localStorage.getItem("wishlist")) || []
         var h5 = document.createElement("p");
         h5.textContent = elem.name;
         h5.setAttribute("class","productname");
+        var add = document.createElement("button");
+        add.textContent="cart ";
+        add.setAttribute("class","bag");
+        add.addEventListener("click",function()
+        {
+            addbag(elem,index)
+        })
         
-        
-        
+        var i = document.createElement("i");
+        i.classList.add("bi", "bi-bag-fill");
+        add.append(i);
 
         var btn = document.createElement("button");
         btn.textContent = "";
@@ -38,7 +48,7 @@ var wishlistarr = JSON.parse(localStorage.getItem("wishlist")) || []
         
 
         var cost = document.createElement("p");
-        cost.textContent = elem.price;
+        cost.textContent =  `INR ${elem.price}`;
         cost.setAttribute("class","productcost");
 
         // var div3 = document.createElement("div");
@@ -50,7 +60,10 @@ var wishlistarr = JSON.parse(localStorage.getItem("wishlist")) || []
         
 
         // div2.append()
-        div1.append(avatar,h4,h5,cost,btn);
+        var baganddel = document.createElement("div");
+        baganddel.setAttribute("class","bagAnddel");
+        baganddel.append(add,btn);
+        div1.append(avatar,h4,h5,cost,baganddel);
         document.querySelector("#blockelem").append(div1);
     });
 
@@ -65,4 +78,18 @@ var wishlistarr = JSON.parse(localStorage.getItem("wishlist")) || []
         }
         function removeall(){
             document.querySelector("#blockelem").textContent = "";
+        }
+        function addbag(elem,index)
+        {
+            wishlistarr.splice(index,1)
+            console.log(wishlistarr)
+            localStorage.setItem("wishlist", JSON.stringify(wishlistarr))
+            cartarr.push(elem)
+            localStorage.setItem("cartitem",JSON.stringify(cartarr))
+            console.log(cartarr)
+            location.reload()
+
+            
+           
+
         }
