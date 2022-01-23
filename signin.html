@@ -4560,14 +4560,14 @@
       })
     ) {
       console.log("already exit");
-      window.location.href = "login1.html";
+      window.location.href = "login.html";
     } else {
       var emaildata = {
         email: email,
       };
       emailarr.push(emaildata);
       localStorage.setItem("email", JSON.stringify(emailarr));
-      window.location.href = "creat1.html";
+      window.location.href = "signup.html";
       // window.location.href="creat.html";
       // console.log(email);
     }
