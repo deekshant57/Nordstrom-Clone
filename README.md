@@ -52,7 +52,7 @@ A glimpse of our website
 - The landing page where users cans see various categories and subcategories.
 - 
 ![Screenshot (116).png](https://miro.medium.com/max/1400/1*HYqWLyKEmYpg2cXOpnU2Ug.png)
-- The landing page where users cans see various categories and subcategories.
+- The landing page where users cans see Sign in and account details.
 
 
 ![Screenshot (110).png](https://miro.medium.com/max/1400/1*x5MMp4BvUkGGOaVWYh00hg.png)
@@ -69,7 +69,7 @@ A glimpse of our website
 
 ## Authors
 
-  1. [Tanya] (https://github.com/TanyaIndian)
+  1. [Tanya](https://github.com/TanyaIndian) 
   2. [Hitesh Tarwani](https://github.com/hitesht4) 
   3. [Tejeswara Rao](https://github.com/epj23Azfqw) 
   4. [Md Aarif ](https://github.com/Aarif5435)
