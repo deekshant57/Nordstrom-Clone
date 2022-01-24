@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="icon"
+      href="//n.nordstrommedia.com/id/c4fb2a09-3657-4161-9b79-6412897d9399.png"
+      sizes="96x96"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Roboto:wght@100;300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -20,11 +25,26 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="payment.css" />
     <link rel="stylesheet" href="style.css" />
     <title>
       Nordstrom Online & In Store: Shoes, Jewelry, Clothing, Makeup, Dresses
     </title>
+    <style>
+      #otp {
+        width: 500px;
+        background-color: white;
+        margin: auto;
+        margin-top: 100px;
+        width: 500px;
+        padding: 50px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+
+      input {
+        width: 400px;
+        border-color: black;
+      }
+    </style>
   </head>
   <body>
     <!-- Top Bar -->
@@ -4512,257 +4532,38 @@
       </nav>
     </div>
 
-    <div id="container1">
-      <!-- <div class="form-1" id="cart">
-        <div class="mb-3">
-          <h5>Checkout</h5>
+    <div id="otp">
+      <div class="mb-3">
+        <h5>Enter One Time Password</h5>
+        <p>Required <span style="color: red">*</span></p>
 
-          <a href="">Edit Shopping Bag</a>
-          <p>Pickup or delivery</p>
-          <p>Delivery only - pickup not available</p>
-          <a href=""> Change shipping speed</a>
-        </div>
-      </div> -->
-
-      <!-- <div class="form-1">
-        <!-- <h5><img src="images/gift.png" alt="" /> Gift options</h5> -->
-      <!-- <p>Does your order include a gift?</p>
-        <a href="">Choose gift options</a> -->
-      <!-- <h3 class="text-center text-dark m-0 p-0">Checkout</h3> -->
-      <!-- </div> -->
-
-      <div class="form-1 mt-5">
-        <div class="mb-3">
-          <h5>Contact Info</h5>
-          <label for="exampleFormControlInput1" class="form-label">
-            Email <span><i class="one">(for order updates)</i></span
-            ><span style="color: red">*</span>
-          </label>
-          <input
-            type="email"
-            class="form-control name1"
-            id="exampleFormControlInput1"
-            placeholder=""
-            class="check"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">
-            Phone No. <span><i class="one">(for order updates)</i></span
-            ><span style="color: red">*</span></label
-          >
-          <input
-            type="email"
-            class="form-control name1"
-            id="exampleFormControlInput1"
-            placeholder=""
-            class="check"
-          />
-          <a href=""> Free shipping to a Nordstrom or Nordstrom Rack Store</a>
-        </div>
+        <label for="exampleFormControlInput1" class="form-label">
+          Enter OTP<span style="color: red">*</span>
+        </label>
+        <input
+          type="number"
+          class="form-control name1 one"
+          id="exampleFormControlInput1"
+          placeholder=""
+        />
+        <button
+          type="button"
+          class="btn btn-dark btn-lg mt-3"
+          onclick="myFunction()"
+        >
+          Submit
+        </button>
       </div>
-
-      <div class="form-1">
-        <!-- <img style="width: 90px; float: left" src="hand.jpeg" alt="" /> -->
-        <p>Nordstorm Card</p>
-        <p>
-          Get a $40 Bonus Note when you use a new Nordstrom credit card.
-          <a href="">Apply Now</a>
-        </p>
-      </div>
-
-      <div class="form-1">
-        <div class="mb-3">
-          <h5>Payement</h5>
-
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault1"
-            />
-            <label class="form-check-label" for="flexRadioDefault1">
-              <i class="bi bi-credit-card"></i><span>Credit Card</span>
-            </label>
-          </div>
-
-          <label for="exampleFormControlInput1" class="form-label">
-            Card Number<span style="color: red">*</span>
-          </label>
-          <input
-            type="email"
-            class="form-control name1"
-            id="exampleFormControlInput1"
-            placeholder=""
-            class="check"
-          />
-        </div>
-
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">
-            Expiration Date<span style="color: red">*</span>
-          </label>
-          <input
-            type="email"
-            class="form-control name1"
-            id="exampleFormControlInput1"
-            placeholder=""
-            class="check"
-          />
-        </div>
-
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">
-            Security Code <span style="color: red">*</span></label
-          >
-          <input
-            type="text"
-            class="form-control name1"
-            id="exampleFormControlInput1"
-            placeholder=""
-            name="search"
-            onclick=""
-            class="check"
-          />
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault"
-          />
-          <label class="form-check-label" for="flexCheckDefault">
-            Same as Shipping Address
-          </label>
-        </div>
-
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">
-            First Name<span style="color: red">*</span>
-          </label>
-          <input
-            type="email"
-            class="form-control name1"
-            id="exampleFormControlInput1"
-            placeholder=""
-            class="check"
-          />
-        </div>
-
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">
-            Last Name<span style="color: red">*</span>
-          </label>
-          <input
-            type="email"
-            class="form-control name1"
-            id="exampleFormControlInput1"
-            placeholder=""
-            class="check"
-          />
-        </div>
-
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">
-            <i class="bi bi-search"></i> Address
-            <span style="color: red">*</span></label
-          >
-
-          <input
-            type="text"
-            class="form-control name1 icon"
-            id="exampleFormControlInput1"
-            placeholder="quickly find your adddress"
-            name="search"
-            onclick=""
-            class="check"
-          />
-        </div>
-
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
-          />
-          <label class="form-check-label" for="flexRadioDefault1">
-            <i class="bi bi-paypal"></i>
-          </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault2"
-            checked
-          />
-          <label class="form-check-label" for="flexRadioDefault2">
-            <i class="bi bi-bank2"></i>
-          </label>
-        </div>
-      </div>
-
-      <div class="form-1">
-        <h5>Review Order</h5>
-        <table>
-          <tr>
-            <td>Your Items</td>
-            <td class="items"></td>
-          </tr>
-          <tr>
-            <td>Shipping</td>
-            <td>free</td>
-          </tr>
-          <tr>
-            <td>Estimated Tax</td>
-            <td>free</td>
-          </tr>
-          <tr>
-            <td id="tr1">Estimated Total</td>
-            <td class="grandtotal">0</td>
-          </tr>
-        </table>
-      </div>
-
-      <div id="container2">
-        <div class="form-1" id="second">
-          <h5>Confirmed Order</h5>
-          <table>
-            <tr>
-              <td>Your Items</td>
-              <td class="items1">0</td>
-            </tr>
-            <tr>
-              <td>shipping</td>
-              <td>free</td>
-            </tr>
-            <tr>
-              <td>Estimated Tax</td>
-              <td>free</td>
-            </tr>
-
-            <tr class="tr1 mt-2">
-              <td class="fw-bold">Estimated Total</td>
-              <td class="grandtotal1 fw-bold">0</td>
-            </tr>
-          </table>
-
-          <button type="button" class="btn btn-dark order w-100" id="order">
-            Pay Now
-          </button>
-          <p class="mt-2">
-            Need help? Call 1.888.282.6060 or
-            <span><a href="">chat with us</a></span>
-          </p>
-        </div>
+      <div id="alertsuccess" class="alert alert-success d-none" role="alert">
+        <h4><i class="bi bi-check-square-fill me-3"></i>Payment Successful</h4>
+        <button
+          class="btn text-light bg-dark w-100"
+          onclick="window.location.href='index.html'"
+        >
+          Go Back to Home Page
+        </button>
       </div>
     </div>
-
-    <!-- footer -->
     <footer class="mt-5">
       <div class="d-flex py-5">
         <div>
@@ -4855,24 +4656,14 @@
   </body>
 </html>
 <script>
-  var length = JSON.parse(localStorage.getItem("length"));
-  document.querySelector(".items").textContent = length;
-  // console.log(length);
-  var total = JSON.parse(localStorage.getItem("total"));
-  document.querySelector(".grandtotal").textContent = total;
-  document.querySelector(".items1").textContent = length;
-  document.querySelector(".grandtotal1").textContent = `INR ${total}`;
-  document.querySelector("#order").addEventListener("click", function () {
-    // console.log("teja");
-    var name = document.querySelectorAll(".name1");
-
-    for (var i = 0; i < name.length; i++) {
-      if (!name[i].value) {
-        alert("Enter all value");
-        break;
-      } else {
-        window.location.href = "otp.html";
-      }
+  function myFunction() {
+    var otp = document.querySelector(".one").value;
+    if (otp == 123456) {
+      // window.location.href = "success.html";
+      document.getElementById("alertsuccess").classList.remove("d-none");
+      // console.log("object");
+    } else {
+      alert("Incorrect OTP");
     }
-  });
+  }
 </script>
