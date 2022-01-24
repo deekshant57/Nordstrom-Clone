@@ -1,0 +1,62 @@
+/* #blockelem {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+row-gap: 30px;
+column-gap: 20px;
+padding-right: 40px;
+} */
+#avatar {
+  width: 20%;
+  height: 10%;
+}
+#blockelem > div {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+}
+/* #blockelem h6,
+p {
+padding: 10px;
+}
+#blockelem > p {
+padding-top: 0px;
+} */
+/* b {
+  padding-left: 10px;
+} */
+/* #blockelem > div > div {
+display: flex;
+margin-right: 10px;
+justify-content: space-between;
+} */
+#box1 {
+  display: flex;
+}
+#btndel {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -5px;
+}
+
+#wholediv > div {
+  border: black;
+}
+#items {
+  color: gray;
+  font-size: 10px;
+  padding-top: 5px;
+}
+#orsym {
+  font-size: 20px;
+  margin-top: -10px;
+}
+.fontsize2 {
+  font-size: 12px;
+}
+
+#deltebtn {
+  background-color: white;
+  border: 0px;
+}
+.applybtn {
+  height: 22px;
+}
