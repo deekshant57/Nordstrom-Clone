@@ -4501,7 +4501,7 @@
       </nav>
     </div>
     <!-- sign-in -->
-    <div class="signin1 anoh1">
+    <div class="signin1 anoh1 mt-4">
       <p class="fs-4">Create Account</p>
       <div class="fw-light fontsize">
         <i class="bi bi-credit-card-2-back" style="font-size: 17px"></i>
@@ -4518,11 +4518,14 @@
         <span class="ms-2"> Use one sign-in across our brands</span>
       </div>
 
-      <p class="fw-light fontsize mt-3 required1">Requred</p>
+      <p class="fw-light fontsize mt-3 required">Requred</p>
       <h6 class="fontsize mb-0">Email</h6>
       <div class="fw-light fontsize d-flex">
         <p id="getdata"></p>
-        <a href="#" class="edit1" onclick="window.location.href='singin.html'"
+        <a
+          href="#"
+          style="color: black; margin-left: 135px"
+          onclick="window.location.href='singin.html'"
           >Edit</a
         >
       </div>
@@ -4530,40 +4533,32 @@
         <div class="required">
           <label class="fontsize">First name</label>
         </div>
-        <input type="text" id="first" class="w-100 inputhei creatname" />
+        <input type="text" class="w-100 inputhei" required />
         <div class="required">
           <label class="fontsize mt-4">Last name</label>
         </div>
-        <input type="text" id="last" class="w-100 inputhei creatname" />
+        <input type="text" class="w-100 inputhei" required />
         <div class="required">
-          <label
-            class="fontsize mt-4"
-            onclick="window.location.href='index.html'"
-            >Create password</label
-          >
+          <label class="fontsize mt-4">Create password</label>
         </div>
         <div class="pwd">
-          <input type="password" class="w-100 inputhei" id="inputpwd" />
+          <input
+            type="password"
+            class="w-100 inputhei"
+            id="inputpwd"
+            required
+          />
           <span onclick="showpass()">
-            <a href="#" class="showpwd" id="showpwd">Show</a>
+            <a class="showpwd" id="showpwd">Show</a>
             <a href="#" class="showpwd" id="hidepwd">Hide</a>
           </span>
         </div>
         <div class="fontsize fw-light mt-4">
           <p>
             By tapping Next, you agree to our
-            <a
-              href="https://www.nordstrom.com/browse/customer-service/policy/privacy"
-              class="textblack"
-            >
-              Privacy Policy</a
-            >
+            <a href="#" class="textblack"> Privacy Policy</a>
             and
-            <a
-              href="https://www.nordstrom.com/browse/customer-service/policy/terms-conditions"
-              class="textblack"
-              >Terms & Conditions.</a
-            >
+            <a href="#" class="textblack">Terms & Conditions.</a>
           </p>
         </div>
         <div onclick="creatfun()">
@@ -4575,6 +4570,7 @@
         </div>
       </form>
     </div>
+
     <!-- Footer  -->
 
     <footer class="mt-5">
@@ -4671,52 +4667,11 @@
 </html>
 
 <script>
-  document.querySelector("form").addEventListener("submit", redirectfun);
+  var login = JSON.parse(localStorage.getItem("email"));
 
-  function redirectfun(even) {
-    event.preventDefault();
-
-    var first = document.querySelector("#first").value;
-    var last = document.querySelector("#last").value;
-    var pas = document.querySelector("#inputpwd").value;
-    console.log(first, last, pas);
-
-    if (first === "" || last === "" || pas === "") {
-      alert("somthing went worng");
-    } else {
-      window.location.href = "login.html";
-    }
-  }
-
-  var login = JSON.parse(localStorage.getItem("newlogin"));
-
-  console.log(login);
+  // console.log(login);
   document.querySelector("#getdata").append(login);
-  var passarr = JSON.parse(localStorage.getItem("password")) || [];
-
-  function creatfun(event) {
-    //  event.preventDefault();
-    var password = document.querySelector("#inputpwd").value;
-    // console.log(password);
-    if (
-      passarr.some((passdata) => {
-        return passdata.passwor == password;
-      })
-    ) {
-      console.log("no");
-    } else {
-      var passdata = {
-        passwor: password,
-      };
-      passarr.push(passdata);
-      localStorage.setItem("password", JSON.stringify(passarr));
-
-      console.log("yes");
-    }
-
-    //  window.location.href='login1.html';
-  }
-
+  // click on show password to show.
   function showpass() {
     var input = document.querySelector("#inputpwd");
     var show = document.querySelector("#showpwd");
@@ -4732,4 +4687,6 @@
       hide.style.display = "none";
     }
   }
+
+  // Save data to local
 </script>
