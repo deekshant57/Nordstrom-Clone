@@ -1,0 +1,107 @@
+#mynavbar {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+#mynavbarp2 {
+  font-weight: 400;
+}
+.myfont {
+  font-size: smaller;
+}
+
+#blockelem {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px 50px;
+}
+#avatar {
+  width: 100%;
+}
+#blockelem > div:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* #blockelem > div > div > button:hover {
+  background-color: black;
+} */
+/* #avatar>img:hover {
+  background-color: ;
+} */
+p {
+  padding: 10px;
+}
+#blockelem > p {
+  padding-top: 0px;
+}
+b {
+  padding-left: 10px;
+}
+#blockelem > div > div {
+  display: flex;
+  margin-right: 10px;
+  justify-content: space-between;
+}
+#filandblo {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+#bimage {
+  width: 100%;
+}
+/* .bgimagemen {
+  background-image: url("https://n.nordstrommedia.com/id/b71a93a9-97ba-4d25-ac16-b3c5ef63d673.jpeg?h=417&w=1334");
+  height: 100%;
+
+  /*width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; */
+/* position: relative; 
+} */
+.bgimage1 {
+  background-image: url("https://n.nordstrommedia.com/id/b71a93a9-97ba-4d25-ac16-b3c5ef63d673.jpeg?h=417&w=1334");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: relative; */
+}
+#sidenavbar {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  width: auto;
+}
+.accordion-icon:after {
+  content: "\2212";
+  width: 0px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  right: 20px;
+  top: 11px;
+  position: absolute;
+}
+
+.accordion-icon.collapsed:after {
+  content: "\002B";
+}
+
+#accordion-icon > h2 {
+  width: 100%;
+}
+
+#wishlist {
+  border: 0px;
+  font-size: 25px;
+  background-color: white;
+}
+#heart>button:hover
+{
+ color: red;
+}
+
+#item{
+
+  width: 35%;
+}

@@ -88,7 +88,6 @@ var wishtocart= wishlistarr
             localStorage.setItem("cartitem",JSON.stringify(cartarr))
             console.log(cartarr)
             location.reload()
-            alert("Product is added to bag!")
 
             
            
